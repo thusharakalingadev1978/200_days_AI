@@ -280,25 +280,60 @@ Features = Area, Bedrooms, Bathrooms, Age
 Target   = Price
 
 
-### Phase 8 – MLOps
-- Docker
-- CI/CD
-- Model Deployment
-- Model Versioning
-- Experiment Tracking
-- Monitoring
-- Cloud Deployment
+### 🧪 11. Training Data vs Testing Data
 
-### Phase 9 – AI Architecture
-- AI System Design
-- Distributed Systems
-- Scalable AI Systems
-- LLM Architecture
-- RAG Architecture
-- Agent Architecture
-- AI Infrastructure
-- Production AI Systems
+මේක අද අනිවාර්යයෙන් understand කරන්න ඕන concept එකක්.
+අපි data සියල්ලම model එකට train කරන්න දුන්නොත් model එක performance එක properly test කරන්න බැහැ.
+ඒ නිසා dataset එක split කරනවා.
+```text
+           Dataset
+                    │
+             ┌──────┴──────┐
+             │             │
+          Training       Testing
+            80%            20%
+             │              │
+             ▼              ▼
+        Learn patterns   Test model
+```
+Typical example:
+```text
+1000 records
 
+800 → Training
+200 → Testing
+```
+
+Training
+Model එක learn කරනවා.
+Testing
+Model එක previously unseen data වල කොච්චර හොඳද බලනවා.
+
+
+### ⚙️ 12. ML Workflow
+අද සිට මේ workflow එක මතක තියාගන්න.
+
+1. Collect Data
+       ↓
+2. Understand Data
+       ↓
+3. Clean Data
+       ↓
+4. Prepare Features
+       ↓
+5. Split Data
+       ↓
+6. Train Model
+       ↓
+7. Evaluate Model
+       ↓
+8. Save Model
+       ↓
+9. Deploy Model
+       ↓
+10. Predict
+
+මේ workflow එක අපි ඉදිරියේ ML → Deep Learning → LLM යන හැම section එකකම නැවත දකිනවා.
 ---
 
 # 📅 Daily Learning Structure
