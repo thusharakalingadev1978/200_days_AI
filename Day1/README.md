@@ -2,20 +2,21 @@
 
 මේ concepts theory එකෙන් විතරක් නෙවෙයි, actual application එකක් හරහා understand වෙන්න ඕන.
 
-You should understand:
-What is AI?
-What is Machine Learning?
-Supervised Learning
-Regression
-Features
-Target
-Dataset
-Training data
-Testing data
-Model
-Prediction
-Training vs Prediction
-Basic ML workflow.
+## 📚 You should understand:
+
+- 🤖 What is AI?
+- 🧠 What is Machine Learning?
+- 🎓 Supervised Learning
+- 📈 Regression
+- 🔢 Features
+- 🎯 Target
+- 📊 Dataset
+- 🏋️ Training Data
+- 🧪 Testing Data
+- 🧠 Model
+- 🔮 Prediction
+- 🔄 Training vs Prediction
+- ⚙️ Basic ML Workflow
 
 Practical side:
 
