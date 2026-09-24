@@ -163,7 +163,6 @@ Area   Bedrooms   Price
 ```
 Model එක මේ data වල relationship එක learn කරනවා.
 
-
 ### Phase 3 – Deep Learning
 - Neural Networks
 - Forward Propagation
