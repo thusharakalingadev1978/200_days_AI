@@ -163,55 +163,122 @@ Area   Bedrooms   Price
 ```
 Model එක මේ data වල relationship එක learn කරනවා.
 
-### Phase 3 – Deep Learning
-- Neural Networks
-- Forward Propagation
-- Backpropagation
-- CNN
-- RNN
-- LSTM
-- Transformers
-- PyTorch
+### 🔥 6. Our First Important Concept — Supervised Learning
 
-### Phase 4 – NLP
-- Text Processing
-- Tokenization
-- Embeddings
-- Attention Mechanism
-- Transformer Architecture
-- Text Classification
-- Named Entity Recognition
+අපේ House Price application එක Supervised Learning problem එකක්.
+ඇයි?
+අපි model එකට historical examples දෙනවා.
+```text
+Input                    Answer
+──────────────────────────────────
+1000 sq.ft, 2 rooms  →   15M
+1500 sq.ft, 3 rooms  →   22M
+2000 sq.ft, 4 rooms  →   31M
+```
+Model එකට:
 
-### Phase 5 – LLM Engineering
-- LLM Fundamentals
-- Prompt Engineering
-- Embeddings
-- Vector Databases
-- RAG
-- Function Calling
-- Tool Use
-- Agents
-- Fine-tuning
-- Evaluation
+"මේ inputs වලට මේ answers තියෙනවා. මේ relationship එක learn කරන්න."
 
-### Phase 6 – Generative AI
-- Generative AI Fundamentals
-- LLM Applications
-- Multimodal AI
-- AI Agents
-- Image Generation
-- Document Intelligence
-- Voice AI
+කියනවා.
 
-### Phase 7 – AI Backend Engineering
-- FastAPI
-- Authentication
-- Authorization
-- JWT
-- Microservices
-- API Gateway
-- Async Communication
-- Event-Driven Architecture
+Supervised Learning:
+```text
+Input Data
+    +
+Correct Output
+    ↓
+Training
+    ↓
+Model
+```
+
+### 📈 7. Regression
+House price එක:
+```text
+Rs. 15,000,000
+Rs. 22,500,000
+Rs. 31,750,000
+Rs. 45,200,000
+```
+වගේ continuous numerical value එකක්.
+
+ඒ නිසා මේක:
+
+Regression Problem
+
+Regression examples
+
+- House price
+- Car price
+- Salary prediction
+- Temperature prediction
+- Sales prediction
+- Demand prediction
+
+### 🧩 8. Features
+Features කියන්නේ prediction එකට model එකට දෙන input variables.
+අපේ application එකේ:
+```text
+Area
+Bedrooms
+Bathrooms
+Age
+Location
+```
+මේවා features.
+
+Example:
+```text
+Area = 1500
+Bedrooms = 3
+Bathrooms = 2
+Age = 8
+```
+
+### 🎯 9. Target
+Target කියන්නේ අපි predict කරන්න ඕන output එක.
+
+අපේ application එකේ:
+```text
+Target = House Price
+```
+So:
+```text
+Features
+──────────────
+Area
+Bedrooms
+Bathrooms
+Age
+Location
+
+        ↓
+
+     MODEL
+
+        ↓
+
+Target
+──────────────
+House Price
+```
+මේ distinction එක ML වල extremely important.
+
+### 📊 10. Dataset
+Dataset එක කියන්නේ training examples collection එක.
+Example:
+| Area | Bedrooms | Bathrooms | Age | Price |
+| ---: | -------: | --------: | --: | ----: |
+| 1000 |        2 |         1 |  15 |   15M |
+| 1200 |        2 |         2 |  10 |   18M |
+| 1500 |        3 |         2 |   8 |   22M |
+| 1800 |        3 |         2 |   5 |   27M |
+| 2200 |        4 |         3 |   4 |   34M |
+මෙතන:
+
+Features = Area, Bedrooms, Bathrooms, Age
+Target   = Price
+
 
 ### Phase 8 – MLOps
 - Docker
