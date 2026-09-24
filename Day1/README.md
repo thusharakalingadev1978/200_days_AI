@@ -21,11 +21,14 @@ Practical side:
 
 අපි අද House Price Prediction System එකේ foundation එක build කරනවා.
 
+
+```text
 House Information
        ↓
-ML Model
+   ML Model
        ↓
 Predicted House Price
+```
 
 ---
 
