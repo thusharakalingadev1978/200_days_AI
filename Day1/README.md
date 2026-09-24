@@ -1,10 +1,31 @@
-# 🚀 AI Developer & AI Architect Learning Journey
+# 🚀 1. Today's Goal
 
-Welcome to my AI Developer to AI Architect learning repository.
+මේ concepts theory එකෙන් විතරක් නෙවෙයි, actual application එකක් හරහා understand වෙන්න ඕන.
 
-This repository contains my day-by-day practical learning journey covering
-Machine Learning, Deep Learning, NLP, LLMs, Generative AI, AI Engineering,
-MLOps, System Design, and AI Architecture.
+You should understand:
+What is AI?
+What is Machine Learning?
+Supervised Learning
+Regression
+Features
+Target
+Dataset
+Training data
+Testing data
+Model
+Prediction
+Training vs Prediction
+Basic ML workflow.
+
+Practical side:
+
+අපි අද House Price Prediction System එකේ foundation එක build කරනවා.
+
+House Information
+       ↓
+ML Model
+       ↓
+Predicted House Price
 
 ---
 
