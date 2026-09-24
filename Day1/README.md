@@ -19,9 +19,7 @@
 - ⚙️ Basic ML Workflow
 
 Practical side:
-
 අපි අද House Price Prediction System එකේ foundation එක build කරනවා.
-
 
 ```text
 House Information
@@ -30,47 +28,141 @@ House Information
        ↓
 Predicted House Price
 ```
-
 ---
 
 ## 🎯 Learning Goal
 
 My main goal is to become a:
 
-- 🐍 Advanced Python Developer
-- 🤖 AI Developer
-- 🧠 Machine Learning Engineer
-- 🧬 Deep Learning Engineer
-- 💬 LLM / Generative AI Engineer
-- 🏗️ AI Architect
+අපේ application එකට user කෙනෙක් මේ information දෙන්න පුළුවන්:
+```text
+Area       = 1500 sq.ft
+Bedrooms   = 3
+Bathrooms  = 2
+Age        = 8 years
+Location   = Kandy
+```
+ML model එක:
+```text
+Input
+  ↓
+Machine Learning Model
+  ↓
+Predicted Price
+```
+Output:
+```text
+Predicted Price = Rs. 28,500,000
 
+```
+Important: මේ price එක example එකක්. අපේ actual trained model එක dataset එක අනුව prediction එක calculate කරනවා.
+
+---
 The learning approach is **practical and project-based**, with real-world
 applications rather than only theoretical learning.
 
 ---
 
-## 📚 Learning Roadmap
+## 📚 3. Today's Architecture
 
-### Phase 1 – Python for AI
-- Advanced Python
-- NumPy
-- Pandas
-- Matplotlib
-- Data Processing
-- APIs
-- Async Programming
-- Testing
+අද අපි මේ architecture එකේ first part එක build කරනවා.
 
-### Phase 2 – Machine Learning
-- Machine Learning Fundamentals
-- Data Preprocessing
-- Feature Engineering
-- Regression
-- Classification
-- Clustering
-- Model Evaluation
-- Hyperparameter Tuning
-- ML Pipelines
+```text
+  HOUSE PRICE SYSTEM
+                        │
+                        ▼
+                  House Dataset
+                        │
+                        ▼
+                 Data Understanding
+                        │
+                        ▼
+                    Features
+                        │
+                        ▼
+                     Target
+                        │
+                        ▼
+               Train/Test Dataset
+                        │
+                        ▼
+                ML Model Training
+```
+Day 1 later stages වල:
+```text
+ML Model
+   ↓
+Saved Model
+   ↓
+FastAPI
+   ↓
+POST /predict
+   ↓
+Prediction
+
+```
+
+### 4. What Is Artificial Intelligence?
+Artificial Intelligence (AI) කියන්නේ computer system එකකට human-like intelligent tasks perform කරන්න හැකියාව ලබාදීම.
+```text
+Examples:
+
+Image recognition
+Speech recognition
+Recommendation systems
+Chatbots
+Autonomous systems
+Fraud detection
+Language translation
+```
+```text
+AI
+│
+├── Machine Learning
+│
+├── Deep Learning
+│
+├── NLP
+│
+├── Computer Vision
+│
+└── Generative AI
+```
+### 🧠 5. What Is Machine Learning?e Learning
+
+Traditional programming එකේ:
+```text
+Rules + Data
+     ↓
+ Program
+     ↓
+ Output
+```
+Example:
+```text
+if area > 2000:
+    price = 30000000
+```
+මෙතන rules developer තමයි manually ලියන්නේ.
+Machine Learning වල:
+```text
+Data + Answers
+      ↓
+  ML Algorithm
+      ↓
+     Model
+```
+Model එක data වල patterns learn කරනවා.
+House example:
+```text
+Area   Bedrooms   Price
+1000      2       15M
+1500      3       22M
+2000      4       31M
+2500      4       38M
+```
+Model එක මේ data වල relationship එක learn කරනවා.
+
 
 ### Phase 3 – Deep Learning
 - Neural Networks
